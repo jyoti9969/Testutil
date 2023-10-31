@@ -5,6 +5,7 @@ import Navbar from './componentes/Navbar';
 import Textform from './componentes/Textform';
 import React,{useState} from 'react'
 import Alert from './componentes/Alert';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 // import {
 //   BrowserRouter as Router,
 //  Routes,
@@ -50,21 +51,7 @@ function App() {
     <div className="container">
     <Textform mode={mode} showAlert={showAlert}  /> 
     </div>
-    {/* <Router>
-    <Navbar  title="My-textutil" mode={mode}  enableDarkmode={togglemode}/>
-    <Alert  alert={alert} />
-    <div>
-      
-      <Routes>
-        <Route exact path="/about" element={<About/>}/>
-        
-    
-        <Route exact path="/"    element={<Textform mode={mode} showAlert={showAlert}  />}  />
-     
-      
-      </Routes>
-    </div>
-  </Router> */}
+
     
   </>
   );
